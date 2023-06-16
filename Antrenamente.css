@@ -1,0 +1,185 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+
+header {
+    background-color: #000;
+	color: #fff;
+	padding: 20px 
+    ;
+}
+.nav{
+  
+list-style: none;
+display: inline-block;
+padding: 8px 12px;
+position: relative;
+ }
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    }
+    nav a ::after{
+
+      content: '';
+      width: 0%;
+      height: 2px;
+      background: #f44336;
+      display: block;
+      margin: auto;
+      transition: 0.5s;
+
+    }
+
+button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    font-size: 25px;
+    cursor: pointer;
+    }
+    
+    button:hover {
+    background-color: #e94741;
+    color: black;
+    transition: 2ms;
+    }
+    
+    /* Stiluri pentru secțiunea "Hero" */
+    #text1 {
+    background-image: url("poze/");
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+    
+    #text1 h2 {
+    font-size: 48px;
+    margin-bottom: 32px;
+    }
+    
+    /* Stiluri pentru secțiunea "Servicii" */
+    #services {
+    padding: 32px;
+    }
+    
+    #services h2 {
+    font-size: 32px;
+    margin-bottom: 32px;
+    }
+    
+    #services p {
+    font-size: 20px;
+    margin-bottom: 32px;
+    }
+    
+    #services ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    
+    #services li {
+    flex-basis: calc(33.33% - 1rem);
+    margin-bottom: 32px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    }
+    
+    #services li h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    }
+    
+    #services li img {
+    width: 100%;
+    margin-bottom: 30px;
+    }
+    
+  
+    footer {
+    background-color: #333;
+    color: #fff;
+    padding: 26px;
+    text-align: center;
+    }
+    
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-right: 10px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #f32121;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #f32121;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+
+  .toggle-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .toggle-container p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
